@@ -18,15 +18,12 @@ struct FConversationMessage
 	UPROPERTY(BlueprintReadOnly)
 	int MessageID;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString NPCName;
 
 	FConversationMessage()
 	{
 		ConversationMessage = TEXT("");
 		EndsConversation = false;
 		MessageID = 0;
-		NPCName = TEXT("");
 	}
 };
 
