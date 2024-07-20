@@ -15,7 +15,7 @@ struct FConversationMessage
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool EndsConversation;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(BlueprintReadWrite)
 	int MessageID;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
