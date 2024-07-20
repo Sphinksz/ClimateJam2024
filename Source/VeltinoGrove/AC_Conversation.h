@@ -15,8 +15,11 @@ struct FConversationMessage
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool EndsConversation;
 
-	UPROPERTY(BlueprintReadOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int MessageID;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool IsPlayerResponse;
 
 
 	FConversationMessage()
@@ -24,6 +27,7 @@ struct FConversationMessage
 		ConversationMessage = TEXT("");
 		EndsConversation = false;
 		MessageID = 0;
+		IsPlayerResponse = false;
 	}
 };
 
